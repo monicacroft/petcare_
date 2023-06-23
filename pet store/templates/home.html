@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Pet Care Home</title>
+   <style>
+      body {
+         font-family: Arial, sans-serif;
+         background-color: #BC83D8; /* Pink background color */
+         margin: 0;
+         padding: 20px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         height: 100vh;
+      }
+
+      h1 {
+         color: #333333;
+         text-align: center;
+         margin-bottom: 20px;
+      }
+
+      p {
+         color: #666666;
+         text-align: center;
+         margin-bottom: 20px;
+      }
+
+      .button-container {
+         display: flex;
+         justify-content: flex-end;
+         margin-top: 20px;
+      }
+
+      .button-container a {
+         display: inline-block;
+         background-color: #0066cc;
+         color: #ffffff;
+         text-decoration: none;
+         padding: 10px 20px;
+         border-radius: 4px;
+         margin-left: 10px;
+         transition: background-color 0.3s ease;
+      }
+
+      .button-container a:hover {
+         background-color: #003399;
+      }
+   </style>
+</head>
+<body>
+   <h1>Welcome to the Pet Care Website!</h1>
+   <p>This website provides information and resources for pet care.</p>
+   <div class="button-container">
+      <a href="/store">Visit Store Like a Guest</a>
+      <a href="/register" style="margin-left: auto;">Register</a> 
+   </div>
+
+   <!-- Add the "See Available Pets in Another Country" button -->
+   <form method="POST" action="/pets">
+      <button type="submit">See Available Pets in Another Country</button>
+   </form>
+</body>
+</html>

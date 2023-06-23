@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contract</title>
+</head>
+<body>
+    <h1>Adoption Contract</h1>
+    
+    <p>Contract details go here...</p>
+    
+    <h2>Are you sure you want to adopt {{ pet.name }}?</h2>
+    
+    <form method="POST" action="/confirm_adopt/{{ pet.id }}">
+        <button type="submit" name="answer" value="yes">Yes</button>
+        <button type="submit" name="answer" value="no">No</button>
+    </form>
+</body>
+</html>
